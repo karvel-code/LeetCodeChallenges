@@ -12,5 +12,8 @@ var twoSum = function(nums, target) {
             return [map.get(num2), i]
         }
         map.set(num1, i)
+        
     }
+    
+    
 };
