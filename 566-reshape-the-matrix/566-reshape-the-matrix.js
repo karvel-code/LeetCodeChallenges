@@ -8,9 +8,7 @@ var matrixReshape = function(mat, r, c) {
     let x = mat.length // length of the rows
     let y = mat[0].length // length of the colums or individual arrays
     
-    if (x * y !== r * c) {
-        return mat
-    }
+    if (x * y !== r * c) return mat;
     
     let contArray = new Array();
     
