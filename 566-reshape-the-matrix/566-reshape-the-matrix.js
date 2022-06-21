@@ -24,7 +24,7 @@ var matrixReshape = function(mat, r, c) {
         for (let j = 0; j < c; j++) {
             subArray.push(mat[bigCounter][smallCounter])
             smallCounter++
-            if (smallCounter === mat[0].length) {
+            if (smallCounter === y) {
                 bigCounter++
                 smallCounter = 0
             }
