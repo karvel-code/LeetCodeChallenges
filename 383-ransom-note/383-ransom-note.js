@@ -4,18 +4,18 @@
  * @return {boolean}
  */
 var canConstruct = function(ransomNote, magazine) {
-    let a = [...ransomNote].sort()
+    // let a = [...ransomNote].sort()
     let b = [...magazine].sort()
     // if (ransomNote.includes(magazine)) {
     //     return true
     // } else {
     //     return false
     // }
-    for (let i = 0; i < a.length; i++) {
-        if (b.indexOf(a[i]) === -1) {
+    for (let i = 0; i < ransomNote.length; i++) {
+        if (b.indexOf(ransomNote[i]) === -1) {
             return false
         } else {
-            b.splice(b.indexOf(a[i]), 1)
+            b.splice(b.indexOf(ransomNote[i]), 1)
         }
     } 
     return true
