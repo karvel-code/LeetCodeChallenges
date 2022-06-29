@@ -19,5 +19,4 @@ var search = function(nums, target) {
         
     }
     return -1
-    
 };
