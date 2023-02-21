@@ -1,7 +1,7 @@
 # @param {Integer} x
 # @return {Integer}
 def my_sqrt(x)
-    left = 1
+    left = 0
     right = x
     
     return x if x < 2 
