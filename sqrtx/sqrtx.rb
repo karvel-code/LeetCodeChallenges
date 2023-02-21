@@ -12,7 +12,7 @@ def my_sqrt(x)
             return mid
         elsif (mid * mid) > x
             right = mid -1
-        else (mid * mid) < x
+        else
             left = mid + 1
         end
     end
