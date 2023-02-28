@@ -8,19 +8,31 @@
 def first_bad_version(n)
     left = 0
     right = n
-    result = n
+    # result = n
+    
+#     while left <= right do
+#         mid = (left + right) / 2
+        
+#         if is_bad_version(mid)
+#             result = mid
+#             right =  mid - 1
+#         else
+#             left = mid + 1
+#         end
+#     end
+    
+#     result
     
     while left <= right do
         mid = (left + right) / 2
-        
-        if is_bad_version(mid)
-            result = mid
-            right =  mid - 1
-        else
+        if (!is_bad_version(mid))
             left = mid + 1
+        else
+            right = mid - 1
         end
     end
     
-    result
+    left
+        
    
 end
