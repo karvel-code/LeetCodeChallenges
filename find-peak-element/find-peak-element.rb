@@ -3,9 +3,9 @@
 def find_peak_element(nums)
     left = 0
     right = nums.length - 1
-    return 0 if nums.length < 2
+    # return 0 if nums.length < 2
     
-    while left < right do 
+    while left < right 
         mid = (left + right) / 2
         
         if nums[mid] > nums[mid + 1]
